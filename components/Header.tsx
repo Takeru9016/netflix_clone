@@ -4,9 +4,11 @@ import Image from "next/image";
 import { BellIcon, SearchIcon } from "@heroicons/react/solid";
 
 import { images } from "../assets";
+import useAuth from "../hooks/useAuth";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { logout } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,6 +55,7 @@ function Header() {
             src={images.profile}
             alt="profile-pic"
             className="cursor-pointer rounded"
+            onClick={logout}
           />
         </Link>
       </div>
