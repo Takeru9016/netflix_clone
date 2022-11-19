@@ -22,7 +22,6 @@ function login() {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data);
     if (login) {
       await signIn(data.email, data.password);
     } else {
