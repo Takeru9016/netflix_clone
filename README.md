@@ -1,27 +1,54 @@
-# Next.js + Tailwind CSS Example
+# Netflix Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Description
+This **Netflix Clone** replicates the core features of Netflix, including user authentication, dynamic movie browsing, and personalized watchlists. Built using **Next.js**, **TailwindCSS**, **Firebase**, **Material UI**, **Recoil**, and **React Hook Form**, it provides a smooth and interactive movie-browsing experience.
 
-## Deploy your own
+## Features
+- Firebase authentication for secure user login.
+- Movie browsing interface with personalized watchlists.
+- State management using Recoil for seamless app state flow.
+- Responsive design using TailwindCSS and Material UI.
+- Form handling with React Hook Form for various forms across the site.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Tech Stack
+- **Frontend**: Next.js, TailwindCSS, Material UI
+- **State Management**: Recoil
+- **Form Management**: React Hook Form
+- **Authentication**: Firebase
+- **Backend**: Firebase
+- **Deployment**: Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## Installation
 
-## How to use
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Takeru9016/netflix_clone.git
+    cd netflix-clone
+    ```
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+3. **Set up Firebase**:
+    Add Firebase credentials to the `.env` file:
+    ```env
+    NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+    ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+4. **Run the development server**:
+    ```bash
+    npm run dev
+    ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+5. **Access the app** at `http://localhost:3000`.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Usage
+- Sign up or sign in using Firebase authentication.
+- Browse movies and add them to your watchlist.
+- Enjoy a responsive, Netflix-like user experience.
+
+## Future Improvements
+- Integration with a movie database API for real movie content.
+- Enhanced filtering and search functionalities.
